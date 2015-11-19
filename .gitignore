@@ -1,0 +1,9 @@
+*.rpm
+*.key
+/secrets/*
+/logs/*
+/plugins/*
+*.log
+*.cache
+*.key.*
+credentials.xml

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.drupal.config.DrushInstallation_-DescriptorImpl plugin="drupal-developer@0.6">
+  <installations class="org.jenkinsci.plugins.drupal.config.DrushInstallation-array">
+    <org.jenkinsci.plugins.drupal.config.DrushInstallation>
+      <name>Default</name>
+      <home>/usr/local/bin/drush</home>
+      <properties/>
+    </org.jenkinsci.plugins.drupal.config.DrushInstallation>
+  </installations>
+</org.jenkinsci.plugins.drupal.config.DrushInstallation_-DescriptorImpl>
