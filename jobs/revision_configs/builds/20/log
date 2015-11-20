@@ -1,0 +1,97 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/revision_configs
+[revision_configs] $ /bin/sh -xe /tmp/hudson2864299219415650112.sh
++ cp -R /var/lib/jenkins/automationtest /var/lib/jenkins/be.certipost.hudson.plugin.SCPRepositoryPublisher.xml /var/lib/jenkins/config.xml '/var/lib/jenkins/Connection Activity monitoring to slaves.log' /var/lib/jenkins/credentials.xml '/var/lib/jenkins/Download metadata.log' /var/lib/jenkins/envinject-plugin-configuration.xml /var/lib/jenkins/envInject.xml '/var/lib/jenkins/Fingerprint cleanup.log' /var/lib/jenkins/github-plugin-configuration.xml /var/lib/jenkins/hudson.maven.MavenModuleSet.xml /var/lib/jenkins/hudson.model.UpdateCenter.xml /var/lib/jenkins/hudson.plugins.git.GitSCM.xml /var/lib/jenkins/hudson.plugins.git.GitTool.xml /var/lib/jenkins/hudson.scm.CVSSCM.xml /var/lib/jenkins/hudson.scm.SubversionSCM.xml /var/lib/jenkins/hudson.tasks.Ant.xml /var/lib/jenkins/hudson.tasks.Mailer.xml /var/lib/jenkins/hudson.tasks.Maven.xml /var/lib/jenkins/hudson.tasks.Shell.xml /var/lib/jenkins/hudson.triggers.SCMTrigger.xml /var/lib/jenkins/identity.key.enc /var/lib/jenkins/jenkins.model.ArtifactManagerConfiguration.xml /var/lib/jenkins/jenkins.model.DownloadSettings.xml /var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml /var/lib/jenkins/jenkins.mvn.GlobalMavenConfig.xml /var/lib/jenkins/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml /var/lib/jenkins/jenkins.plugins.shiningpanda.tools.PythonInstallation.xml /var/lib/jenkins/jenkins.plugins.ssh2easy.gssh.GsshBuilderWrapper.xml /var/lib/jenkins/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/lib/jenkins/jobs /var/lib/jenkins/logs /var/lib/jenkins/nodeMonitors.xml /var/lib/jenkins/nodes /var/lib/jenkins/org.jenkinsci.main.modules.sshd.SSHD.xml /var/lib/jenkins/org.jenkinsci.plugins.drupal.config.DrushInstallation.xml /var/lib/jenkins/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml /var/lib/jenkins/org.jenkinsci.plugins.gitclient.JGitTool.xml /var/lib/jenkins/org.jenkinsci.plugins.github.GitHubPlugin.cache /var/lib/jenkins/org.jvnet.hudson.plugins.SSHBuildWrapper.xml /var/lib/jenkins/plugins /var/lib/jenkins/queue.xml.bak /var/lib/jenkins/secret.key /var/lib/jenkins/secret.key.not-so-secret /var/lib/jenkins/secrets /var/lib/jenkins/selenium.log /var/lib/jenkins/updates /var/lib/jenkins/userContent /var/lib/jenkins/users /var/lib/jenkins/workspace '/var/lib/jenkins/Workspace clean-up.log' /var/lib/jenkins/workspace/revision_configs/cfg-back
++ :
+[revision_configs] $ /bin/bash /tmp/hudson699877585332058913.sh
+tar: Removing leading `/' from member names
+error: unknown switch `a'
+usage: git add [options] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   config.xml
+#	modified:   hudson.tasks.Mailer.xml
+#	modified:   jenkins.model.JenkinsLocationConfiguration.xml
+#	modified:   jenkins.plugins.ssh2easy.gssh.GsshBuilderWrapper.xml
+#	modified:   jobs/revision configs/config.xml
+#	modified:   org.jenkinsci.main.modules.sshd.SSHD.xml
+#	modified:   org.jenkinsci.plugins.drupal.config.DrushInstallation.xml
+#	modified:   org.jvnet.hudson.plugins.SSHBuildWrapper.xml
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	automationtest
+#	credentials.xml.gpg
+#	envInject.xml
+#	envinject-plugin-configuration.xml
+#	jobs/revision configs/builds/1/
+#	jobs/revision configs/builds/10/
+#	jobs/revision configs/builds/11/
+#	jobs/revision configs/builds/12/
+#	jobs/revision configs/builds/13/
+#	jobs/revision configs/builds/14/
+#	jobs/revision configs/builds/15/
+#	jobs/revision configs/builds/16/
+#	jobs/revision configs/builds/2/
+#	jobs/revision configs/builds/3/
+#	jobs/revision configs/builds/4/
+#	jobs/revision configs/builds/5/
+#	jobs/revision configs/builds/6/
+#	jobs/revision configs/builds/7/
+#	jobs/revision configs/builds/8/
+#	jobs/revision configs/builds/9/
+#	jobs/revision configs/builds/lastFailedBuild
+#	jobs/revision configs/builds/lastStableBuild
+#	jobs/revision configs/builds/lastUnstableBuild
+#	jobs/revision configs/builds/lastUnsuccessfulBuild
+#	jobs/revision configs/lastStable
+#	jobs/revision configs/lastSuccessful
+#	jobs/revision configs/nextBuildNumber
+#	jobs/revision_configs/
+#	secret.key.gpg
+#	secrets.gpg
+#	secrets.tar.gz
+#	secrets.tar.gz.gpg
+#	users/jcpierre/
+#	workspace/
+no changes added to commit (use "git add" and/or "git commit -a")
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: xalg@slac.stanford.edu
+ERROR: Step ‘Set build status on GitHub commit’ aborted due to exception: 
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot retrieve Git metadata for the build
+	at org.jenkinsci.plugins.github.util.BuildDataHelper.getCommitSHA1(BuildDataHelper.java:33)
+	at com.cloudbees.jenkins.GitHubCommitNotifier.updateCommitStatus(GitHubCommitNotifier.java:111)
+	at com.cloudbees.jenkins.GitHubCommitNotifier.perform(GitHubCommitNotifier.java:90)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:785)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:726)
+	at hudson.model.Build$BuildExecution.post2(Build.java:185)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:671)
+	at hudson.model.Run.execute(Run.java:1766)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:410)
+Finished: FAILURE

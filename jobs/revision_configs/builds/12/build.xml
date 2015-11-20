@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>xalg</userId>
+        </hudson.model.Cause_-UserIdCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@1.92.1">
+      <build class="build" reference="../../.."/>
+    </org.jenkinsci.plugins.envinject.EnvInjectPluginAction>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.16">
+      <messageId>&lt;593141757.11.1447985195242.JavaMail.jenkins@jenkins&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+  </actions>
+  <queueId>16</queueId>
+  <timestamp>1447985182147</timestamp>
+  <startTime>1447985182353</startTime>
+  <result>FAILURE</result>
+  <duration>13716</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/revision configs</workspace>
+  <hudsonVersion>1.637</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Pushes Jenkins cfgs to github</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.14.0">
+      <projectUrl>https://github.com/SLACNationalAcceleratorLaboratory/jenkins_cfg/</projectUrl>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <com.cloudbees.plugins.credentials.CredentialsParameterDefinition plugin="credentials@1.24">
+          <name>gpgphrase</name>
+          <description></description>
+          <defaultValue>a78ca896-c591-48c0-bcc6-e55e78980bdc</defaultValue>
+          <credentialType>org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl</credentialType>
+          <required>true</required>
+        </com.cloudbees.plugins.credentials.CredentialsParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>(master)</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cp -R /var/lib/jenkins/* $WORKSPACE/cfg-back 2&gt;/dev/null || :</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+gpg --yes --batch --passphrase=[$gpgphrase] -c $WORKSPACE/cfg-back/credentials.xml
+rm -Rf $WORKSPACE/credentials.xml
+gpg --yes --batch --passphrase=[$gpgphrase] -c $WORKSPACE/cfg-back/secret.key
+rm -Rf $WORKSPACE/cfg-back/secret.key
+tar --warning=&apos;no-file-ignored&apos; -cpzf $WORKSPACE/cfg-back/secrets.tar.gz $WORKSPACE/cfg-back/secrets 
+gpg --yes --batch --passphrase=[$gpgphrase] -c $WORKSPACE/cfg-back/secrets.tar.gz
+rm -Rf $WORKSPACE/cfg-back/secrets
+
+cd $WORKSPACE/cfg-back/
+git stage -A
+git commit -m &quot;${JOB_NAME##*/} Build#$BUILD_NUMBER&quot;
+git push origin master 2&gt;&amp;1</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.16">
+      <recipients>xalg@slac.stanford.edu</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers/>
+</project>

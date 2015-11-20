@@ -5,7 +5,41 @@
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy"/>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:xalg</permission>
+    <permission>hudson.model.Computer.Build:xalg</permission>
+    <permission>hudson.model.Computer.Configure:xalg</permission>
+    <permission>hudson.model.Computer.Connect:xalg</permission>
+    <permission>hudson.model.Computer.Create:xalg</permission>
+    <permission>hudson.model.Computer.Delete:xalg</permission>
+    <permission>hudson.model.Computer.Disconnect:xalg</permission>
+    <permission>hudson.model.Hudson.Administer:xalg</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:xalg</permission>
+    <permission>hudson.model.Hudson.Read:xalg</permission>
+    <permission>hudson.model.Hudson.RunScripts:xalg</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:xalg</permission>
+    <permission>hudson.model.Item.Build:xalg</permission>
+    <permission>hudson.model.Item.Cancel:xalg</permission>
+    <permission>hudson.model.Item.Configure:xalg</permission>
+    <permission>hudson.model.Item.Create:xalg</permission>
+    <permission>hudson.model.Item.Delete:xalg</permission>
+    <permission>hudson.model.Item.Discover:xalg</permission>
+    <permission>hudson.model.Item.Read:xalg</permission>
+    <permission>hudson.model.Item.Workspace:xalg</permission>
+    <permission>hudson.model.Run.Delete:xalg</permission>
+    <permission>hudson.model.Run.Update:xalg</permission>
+    <permission>hudson.model.View.Configure:xalg</permission>
+    <permission>hudson.model.View.Create:xalg</permission>
+    <permission>hudson.model.View.Delete:xalg</permission>
+    <permission>hudson.model.View.Read:xalg</permission>
+    <permission>hudson.plugins.selenium.PluginImpl.Admin:xalg</permission>
+    <permission>hudson.scm.SCM.Tag:xalg</permission>
+    <permission>org.jenkinsci.plugins.envinject.EnvInjectPlugin.ViewVars:xalg</permission>
+  </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
     <enableCaptcha>false</enableCaptcha>

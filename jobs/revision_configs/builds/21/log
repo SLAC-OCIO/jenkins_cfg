@@ -1,0 +1,213 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/revision_configs
+[revision_configs] $ /bin/sh -xe /tmp/hudson1567636543090477390.sh
++ cp -R /var/lib/jenkins/automationtest /var/lib/jenkins/be.certipost.hudson.plugin.SCPRepositoryPublisher.xml /var/lib/jenkins/config.xml '/var/lib/jenkins/Connection Activity monitoring to slaves.log' /var/lib/jenkins/credentials.xml '/var/lib/jenkins/Download metadata.log' /var/lib/jenkins/envinject-plugin-configuration.xml /var/lib/jenkins/envInject.xml '/var/lib/jenkins/Fingerprint cleanup.log' /var/lib/jenkins/github-plugin-configuration.xml /var/lib/jenkins/hudson.maven.MavenModuleSet.xml /var/lib/jenkins/hudson.model.UpdateCenter.xml /var/lib/jenkins/hudson.plugins.git.GitSCM.xml /var/lib/jenkins/hudson.plugins.git.GitTool.xml /var/lib/jenkins/hudson.scm.CVSSCM.xml /var/lib/jenkins/hudson.scm.SubversionSCM.xml /var/lib/jenkins/hudson.tasks.Ant.xml /var/lib/jenkins/hudson.tasks.Mailer.xml /var/lib/jenkins/hudson.tasks.Maven.xml /var/lib/jenkins/hudson.tasks.Shell.xml /var/lib/jenkins/hudson.triggers.SCMTrigger.xml /var/lib/jenkins/identity.key.enc /var/lib/jenkins/jenkins.model.ArtifactManagerConfiguration.xml /var/lib/jenkins/jenkins.model.DownloadSettings.xml /var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml /var/lib/jenkins/jenkins.mvn.GlobalMavenConfig.xml /var/lib/jenkins/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml /var/lib/jenkins/jenkins.plugins.shiningpanda.tools.PythonInstallation.xml /var/lib/jenkins/jenkins.plugins.ssh2easy.gssh.GsshBuilderWrapper.xml /var/lib/jenkins/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/lib/jenkins/jobs /var/lib/jenkins/logs /var/lib/jenkins/nodeMonitors.xml /var/lib/jenkins/nodes /var/lib/jenkins/org.jenkinsci.main.modules.sshd.SSHD.xml /var/lib/jenkins/org.jenkinsci.plugins.drupal.config.DrushInstallation.xml /var/lib/jenkins/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml /var/lib/jenkins/org.jenkinsci.plugins.gitclient.JGitTool.xml /var/lib/jenkins/org.jenkinsci.plugins.github.GitHubPlugin.cache /var/lib/jenkins/org.jvnet.hudson.plugins.SSHBuildWrapper.xml /var/lib/jenkins/plugins /var/lib/jenkins/queue.xml.bak /var/lib/jenkins/secret.key /var/lib/jenkins/secret.key.not-so-secret /var/lib/jenkins/secrets /var/lib/jenkins/selenium.log /var/lib/jenkins/updates /var/lib/jenkins/userContent /var/lib/jenkins/users /var/lib/jenkins/workspace '/var/lib/jenkins/Workspace clean-up.log' /var/lib/jenkins/workspace/revision_configs/cfg-back
++ :
+[revision_configs] $ /bin/bash /tmp/hudson7649049393369151553.sh
+tar: Removing leading `/' from member names
+[master d649da6] #21 21
+ Committer: Jenkins Continuous Integration Server <jenkins@jenkins.xalg-home.farm04-dmz.nebula.slac.stanford.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 181 files changed, 3536 insertions(+), 31 deletions(-)
+ create mode 100644 automationtest
+ create mode 100644 credentials.xml.gpg
+ create mode 100644 envInject.xml
+ create mode 100644 envinject-plugin-configuration.xml
+ create mode 100644 jobs/revision configs/builds/1/build.xml
+ create mode 100644 jobs/revision configs/builds/1/changelog.xml
+ create mode 100644 jobs/revision configs/builds/1/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/1/log
+ create mode 100644 jobs/revision configs/builds/10/build.xml
+ create mode 100644 jobs/revision configs/builds/10/changelog.xml
+ create mode 100644 jobs/revision configs/builds/10/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/10/log
+ create mode 100644 jobs/revision configs/builds/11/build.xml
+ create mode 100644 jobs/revision configs/builds/11/changelog.xml
+ create mode 100644 jobs/revision configs/builds/11/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/11/log
+ create mode 100644 jobs/revision configs/builds/12/build.xml
+ create mode 100644 jobs/revision configs/builds/12/changelog.xml
+ create mode 100644 jobs/revision configs/builds/12/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/12/log
+ create mode 100644 jobs/revision configs/builds/13/build.xml
+ create mode 100644 jobs/revision configs/builds/13/changelog.xml
+ create mode 100644 jobs/revision configs/builds/13/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/13/log
+ create mode 100644 jobs/revision configs/builds/14/build.xml
+ create mode 100644 jobs/revision configs/builds/14/changelog.xml
+ create mode 100644 jobs/revision configs/builds/14/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/14/log
+ create mode 100644 jobs/revision configs/builds/15/build.xml
+ create mode 100644 jobs/revision configs/builds/15/changelog.xml
+ create mode 100644 jobs/revision configs/builds/15/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/15/log
+ create mode 100644 jobs/revision configs/builds/16/changelog.xml
+ create mode 100644 jobs/revision configs/builds/16/log
+ create mode 100644 jobs/revision configs/builds/2/build.xml
+ create mode 100644 jobs/revision configs/builds/2/changelog.xml
+ create mode 100644 jobs/revision configs/builds/2/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/2/log
+ create mode 100644 jobs/revision configs/builds/3/build.xml
+ create mode 100644 jobs/revision configs/builds/3/changelog.xml
+ create mode 100644 jobs/revision configs/builds/3/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/3/log
+ create mode 100644 jobs/revision configs/builds/4/build.xml
+ create mode 100644 jobs/revision configs/builds/4/changelog.xml
+ create mode 100644 jobs/revision configs/builds/4/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/4/log
+ create mode 100644 jobs/revision configs/builds/5/build.xml
+ create mode 100644 jobs/revision configs/builds/5/changelog.xml
+ create mode 100644 jobs/revision configs/builds/5/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/5/log
+ create mode 100644 jobs/revision configs/builds/6/build.xml
+ create mode 100644 jobs/revision configs/builds/6/changelog.xml
+ create mode 100644 jobs/revision configs/builds/6/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/6/log
+ create mode 100644 jobs/revision configs/builds/7/build.xml
+ create mode 100644 jobs/revision configs/builds/7/changelog.xml
+ create mode 100644 jobs/revision configs/builds/7/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/7/log
+ create mode 100644 jobs/revision configs/builds/8/build.xml
+ create mode 100644 jobs/revision configs/builds/8/changelog.xml
+ create mode 100644 jobs/revision configs/builds/8/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/8/log
+ create mode 100644 jobs/revision configs/builds/9/build.xml
+ create mode 100644 jobs/revision configs/builds/9/changelog.xml
+ create mode 100644 jobs/revision configs/builds/9/injectedEnvVars.txt
+ create mode 100644 jobs/revision configs/builds/9/log
+ create mode 120000 jobs/revision configs/builds/lastFailedBuild
+ create mode 120000 jobs/revision configs/builds/lastStableBuild
+ create mode 120000 jobs/revision configs/builds/lastUnstableBuild
+ create mode 120000 jobs/revision configs/builds/lastUnsuccessfulBuild
+ create mode 120000 jobs/revision configs/lastStable
+ create mode 120000 jobs/revision configs/lastSuccessful
+ create mode 100644 jobs/revision configs/nextBuildNumber
+ create mode 100644 jobs/revision_configs/builds/1/build.xml
+ create mode 100644 jobs/revision_configs/builds/1/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/1/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/1/log
+ create mode 100644 jobs/revision_configs/builds/10/build.xml
+ create mode 100644 jobs/revision_configs/builds/10/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/10/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/10/log
+ create mode 100644 jobs/revision_configs/builds/11/build.xml
+ create mode 100644 jobs/revision_configs/builds/11/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/11/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/11/log
+ create mode 100644 jobs/revision_configs/builds/12/build.xml
+ create mode 100644 jobs/revision_configs/builds/12/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/12/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/12/log
+ create mode 100644 jobs/revision_configs/builds/13/build.xml
+ create mode 100644 jobs/revision_configs/builds/13/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/13/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/13/log
+ create mode 100644 jobs/revision_configs/builds/14/build.xml
+ create mode 100644 jobs/revision_configs/builds/14/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/14/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/14/log
+ create mode 100644 jobs/revision_configs/builds/15/build.xml
+ create mode 100644 jobs/revision_configs/builds/15/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/15/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/15/log
+ create mode 100644 jobs/revision_configs/builds/16/build.xml
+ create mode 100644 jobs/revision_configs/builds/16/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/16/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/16/log
+ create mode 100644 jobs/revision_configs/builds/17/build.xml
+ create mode 100644 jobs/revision_configs/builds/17/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/17/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/17/log
+ create mode 100644 jobs/revision_configs/builds/18/build.xml
+ create mode 100644 jobs/revision_configs/builds/18/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/18/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/18/log
+ create mode 100644 jobs/revision_configs/builds/19/build.xml
+ create mode 100644 jobs/revision_configs/builds/19/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/19/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/19/log
+ create mode 100644 jobs/revision_configs/builds/2/build.xml
+ create mode 100644 jobs/revision_configs/builds/2/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/2/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/2/log
+ create mode 100644 jobs/revision_configs/builds/20/build.xml
+ create mode 100644 jobs/revision_configs/builds/20/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/20/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/20/log
+ create mode 100644 jobs/revision_configs/builds/21/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/21/log
+ create mode 100644 jobs/revision_configs/builds/3/build.xml
+ create mode 100644 jobs/revision_configs/builds/3/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/3/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/3/log
+ create mode 100644 jobs/revision_configs/builds/4/build.xml
+ create mode 100644 jobs/revision_configs/builds/4/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/4/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/4/log
+ create mode 100644 jobs/revision_configs/builds/5/build.xml
+ create mode 100644 jobs/revision_configs/builds/5/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/5/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/5/log
+ create mode 100644 jobs/revision_configs/builds/6/build.xml
+ create mode 100644 jobs/revision_configs/builds/6/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/6/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/6/log
+ create mode 100644 jobs/revision_configs/builds/7/build.xml
+ create mode 100644 jobs/revision_configs/builds/7/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/7/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/7/log
+ create mode 100644 jobs/revision_configs/builds/8/build.xml
+ create mode 100644 jobs/revision_configs/builds/8/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/8/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/8/log
+ create mode 100644 jobs/revision_configs/builds/9/build.xml
+ create mode 100644 jobs/revision_configs/builds/9/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/9/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/9/log
+ create mode 120000 jobs/revision_configs/builds/lastFailedBuild
+ create mode 120000 jobs/revision_configs/builds/lastStableBuild
+ create mode 120000 jobs/revision_configs/builds/lastSuccessfulBuild
+ create mode 120000 jobs/revision_configs/builds/lastUnstableBuild
+ create mode 120000 jobs/revision_configs/builds/lastUnsuccessfulBuild
+ create mode 100644 jobs/revision_configs/builds/legacyIds
+ create mode 100644 jobs/revision_configs/config.xml
+ create mode 120000 jobs/revision_configs/lastStable
+ create mode 120000 jobs/revision_configs/lastSuccessful
+ create mode 100644 jobs/revision_configs/nextBuildNumber
+ rewrite org.jvnet.hudson.plugins.SSHBuildWrapper.xml (76%)
+ create mode 100644 secret.key.gpg
+ create mode 100644 secrets.gpg
+ create mode 100644 secrets.tar.gz
+ create mode 100644 secrets.tar.gz.gpg
+ create mode 100644 users/jcpierre/config.xml
+ create mode 100644 workspace/revision configs/secrets.tar
+ create mode 160000 workspace/revision_configs/cfg-back
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: xalg@slac.stanford.edu
+ERROR: Step ‘Set build status on GitHub commit’ aborted due to exception: 
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot retrieve Git metadata for the build
+	at org.jenkinsci.plugins.github.util.BuildDataHelper.getCommitSHA1(BuildDataHelper.java:33)
+	at com.cloudbees.jenkins.GitHubCommitNotifier.updateCommitStatus(GitHubCommitNotifier.java:111)
+	at com.cloudbees.jenkins.GitHubCommitNotifier.perform(GitHubCommitNotifier.java:90)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:785)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:726)
+	at hudson.model.Build$BuildExecution.post2(Build.java:185)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:671)
+	at hudson.model.Run.execute(Run.java:1766)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:410)
+Finished: FAILURE

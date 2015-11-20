@@ -1,0 +1,55 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/revision configs
+[revision configs] $ /bin/sh -xe /tmp/hudson2219263773514662767.sh
++ cp -R /var/lib/jenkins/automationtest /var/lib/jenkins/be.certipost.hudson.plugin.SCPRepositoryPublisher.xml /var/lib/jenkins/config.xml '/var/lib/jenkins/Connection Activity monitoring to slaves.log' /var/lib/jenkins/credentials.xml '/var/lib/jenkins/Download metadata.log' /var/lib/jenkins/envinject-plugin-configuration.xml /var/lib/jenkins/envInject.xml '/var/lib/jenkins/Fingerprint cleanup.log' /var/lib/jenkins/github-plugin-configuration.xml /var/lib/jenkins/hudson.maven.MavenModuleSet.xml /var/lib/jenkins/hudson.model.UpdateCenter.xml /var/lib/jenkins/hudson.plugins.git.GitSCM.xml /var/lib/jenkins/hudson.plugins.git.GitTool.xml /var/lib/jenkins/hudson.scm.CVSSCM.xml /var/lib/jenkins/hudson.scm.SubversionSCM.xml /var/lib/jenkins/hudson.tasks.Ant.xml /var/lib/jenkins/hudson.tasks.Mailer.xml /var/lib/jenkins/hudson.tasks.Maven.xml /var/lib/jenkins/hudson.tasks.Shell.xml /var/lib/jenkins/hudson.triggers.SCMTrigger.xml /var/lib/jenkins/identity.key.enc /var/lib/jenkins/jenkins.model.ArtifactManagerConfiguration.xml /var/lib/jenkins/jenkins.model.DownloadSettings.xml /var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml /var/lib/jenkins/jenkins.mvn.GlobalMavenConfig.xml /var/lib/jenkins/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml /var/lib/jenkins/jenkins.plugins.shiningpanda.tools.PythonInstallation.xml /var/lib/jenkins/jenkins.plugins.ssh2easy.gssh.GsshBuilderWrapper.xml /var/lib/jenkins/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/lib/jenkins/jobs /var/lib/jenkins/logs /var/lib/jenkins/nodeMonitors.xml /var/lib/jenkins/nodes /var/lib/jenkins/org.jenkinsci.main.modules.sshd.SSHD.xml /var/lib/jenkins/org.jenkinsci.plugins.drupal.config.DrushInstallation.xml /var/lib/jenkins/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml /var/lib/jenkins/org.jenkinsci.plugins.gitclient.JGitTool.xml /var/lib/jenkins/org.jenkinsci.plugins.github.GitHubPlugin.cache /var/lib/jenkins/org.jvnet.hudson.plugins.SSHBuildWrapper.xml /var/lib/jenkins/plugins /var/lib/jenkins/queue.xml.bak /var/lib/jenkins/secret.key /var/lib/jenkins/secret.key.not-so-secret /var/lib/jenkins/secrets /var/lib/jenkins/selenium.log /var/lib/jenkins/updates /var/lib/jenkins/userContent /var/lib/jenkins/users /var/lib/jenkins/workspace '/var/lib/jenkins/Workspace clean-up.log' /usr/local/src/cfg-back
+[revision configs] $ /bin/bash /tmp/hudson8743108056682918568.sh
+tar: Removing leading `/' from member names
+/usr/local/src/cfg-back/secrets/
+/usr/local/src/cfg-back/secrets/master.key
+/usr/local/src/cfg-back/secrets/org.jenkinsci.main.modules.instance_identity.InstanceIdentity.KEY
+/usr/local/src/cfg-back/secrets/whitelisted-callables.d/
+/usr/local/src/cfg-back/secrets/whitelisted-callables.d/default.conf
+/usr/local/src/cfg-back/secrets/filepath-filters.d/
+/usr/local/src/cfg-back/secrets/filepath-filters.d/30-default.conf
+/usr/local/src/cfg-back/secrets/hudson.util.Secret
+/usr/local/src/cfg-back/secrets/jenkins.security.ApiTokenProperty.seed
+/usr/local/src/cfg-back/secrets/hudson.model.Job.serverCookie
+/usr/local/src/cfg-back/secrets/hudson.console.AnnotatedLargeText.consoleAnnotator
+/usr/local/src/cfg-back/secrets/slave-to-master-security-kill-switch
+/usr/local/src/cfg-back/secrets/slave_key
+/usr/local/src/cfg-back/secrets/jenkins.slaves.JnlpSlaveAgentProtocol.secret
+tar: /usr/local/src/cfg-back/secrets/dd: socket ignored
+gzip: /usr/local/src/cfg-back/secrets.tar: No such file or directory
+gpg: can't open `/usr/local/src/cfg-back/secrets.tar.gz': No such file or directory
+gpg: symmetric encryption of `/usr/local/src/cfg-back/secrets.tar.gz' failed: No such file or directory
+FATAL: Cannot retrieve Git metadata for the build
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot retrieve Git metadata for the build
+	at org.jenkinsci.plugins.github.util.BuildDataHelper.getCommitSHA1(BuildDataHelper.java:33)
+	at com.cloudbees.jenkins.GitHubSetCommitStatusBuilder.perform(GitHubSetCommitStatusBuilder.java:30)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:785)
+	at hudson.model.Build$BuildExecution.build(Build.java:205)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:162)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:537)
+	at hudson.model.Run.execute(Run.java:1741)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:410)
+Build step 'Git Publisher' marked build as failure
+Sending e-mails to: xalg@slac.stanford.edu
+ERROR: Step ‘Set build status on GitHub commit’ aborted due to exception: 
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot retrieve Git metadata for the build
+	at org.jenkinsci.plugins.github.util.BuildDataHelper.getCommitSHA1(BuildDataHelper.java:33)
+	at com.cloudbees.jenkins.GitHubCommitNotifier.updateCommitStatus(GitHubCommitNotifier.java:111)
+	at com.cloudbees.jenkins.GitHubCommitNotifier.perform(GitHubCommitNotifier.java:90)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:785)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:726)
+	at hudson.model.Build$BuildExecution.post2(Build.java:185)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:671)
+	at hudson.model.Run.execute(Run.java:1766)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:410)
+Finished: FAILURE

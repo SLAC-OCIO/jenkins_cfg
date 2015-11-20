@@ -1,0 +1,11 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQifa/UvOzMvGKn/BIjAFS1ukHKAAAA[0mJenkinsBot2 (Doer 1) in workspace /home/jenkins/workspace/revision configs
+[revision configs] $ /bin/sh -xe /tmp/hudson5630147747320042991.sh
++ gpg --yes --batch '--passphrase=[dl1nkglyc0ls3@s0n]' -c credentials.xml
+gpg: can't open `credentials.xml': No such file or directory
+gpg: symmetric encryption of `credentials.xml' failed: No such file or directory
+Build step 'Execute shell' marked build as failure
+Build step 'Git Publisher' marked build as failure
+Sending e-mails to: xalg@slac.stanford.edu
+Finished: FAILURE

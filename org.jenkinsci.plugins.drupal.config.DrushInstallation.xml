@@ -3,7 +3,7 @@
   <installations class="org.jenkinsci.plugins.drupal.config.DrushInstallation-array">
     <org.jenkinsci.plugins.drupal.config.DrushInstallation>
       <name>Default</name>
-      <home>/usr/local/bin/drush</home>
+      <home>/usr/local/bin/</home>
       <properties/>
     </org.jenkinsci.plugins.drupal.config.DrushInstallation>
   </installations>
