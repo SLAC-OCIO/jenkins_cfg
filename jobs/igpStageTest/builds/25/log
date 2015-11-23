@@ -1,0 +1,37 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQifa/UvOzMvGKn/BJDAO7ks9jKAAAA[0mJenkinsBot1 (Doer 1) in workspace /home/jenkins/workspace/igpStageTest
+executing script:
+=""
+
+whoami
+ls -als
+/bin/ls -als
+bash: =: command not found
+jenkins
+total 500
+  4 drwx------. 6 jenkins jenkins   4096 Nov 20 01:15 .
+  0 drwxr-xr-x. 4 root    root        33 Nov 16 23:29 ..
+  4 -rw-------. 1 jenkins jenkins    105 Nov 17 03:04 .bash_history
+  4 -rw-r--r--. 1 jenkins jenkins     18 Mar  5  2015 .bash_logout
+  4 -rw-r--r--. 1 jenkins jenkins    193 Mar  5  2015 .bash_profile
+  4 -rw-r--r--. 1 jenkins jenkins    231 Mar  5  2015 .bashrc
+  0 drwx------. 2 jenkins jenkins     39 Nov 20 01:15 .gnupg
+  0 drwxrwxr-x. 3 jenkins jenkins     18 Nov 16 23:43 .jenkins
+480 -rw-rw-r--. 1 jenkins jenkins 489023 Nov 19 22:33 slave.jar
+  0 drwx------. 2 jenkins jenkins     28 Nov 16 23:31 .ssh
+  0 drwxrwxr-x. 3 jenkins jenkins     29 Nov 20 01:15 workspace
+total 500
+  4 drwx------. 6 jenkins jenkins   4096 Nov 20 01:15 .
+  0 drwxr-xr-x. 4 root    root        33 Nov 16 23:29 ..
+  4 -rw-------. 1 jenkins jenkins    105 Nov 17 03:04 .bash_history
+  4 -rw-r--r--. 1 jenkins jenkins     18 Mar  5  2015 .bash_logout
+  4 -rw-r--r--. 1 jenkins jenkins    193 Mar  5  2015 .bash_profile
+  4 -rw-r--r--. 1 jenkins jenkins    231 Mar  5  2015 .bashrc
+  0 drwx------. 2 jenkins jenkins     39 Nov 20 01:15 .gnupg
+  0 drwxrwxr-x. 3 jenkins jenkins     18 Nov 16 23:43 .jenkins
+480 -rw-rw-r--. 1 jenkins jenkins 489023 Nov 19 22:33 slave.jar
+  0 drwx------. 2 jenkins jenkins     28 Nov 16 23:31 .ssh
+  0 drwxrwxr-x. 3 jenkins jenkins     29 Nov 20 01:15 workspace
+[SSH] exit-status: 0
+Finished: SUCCESS

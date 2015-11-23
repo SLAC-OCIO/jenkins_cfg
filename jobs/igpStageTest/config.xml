@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.4">
+      <siteName>jenkins@134.79.129.239:22</siteName>
+      <command>/home/jenkins/bin/test.sh</command>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers>
+    <org.jvnet.hudson.plugins.seleniumhtmlreport.SeleniumHtmlReportPublisher plugin="seleniumhtmlreport@1.0">
+      <SELENIUM__REPORTS__TARGET>seleniumReports</SELENIUM__REPORTS__TARGET>
+      <testResultsDir>result.html</testResultsDir>
+      <failureIfExceptionOnParsingResultFiles>true</failureIfExceptionOnParsingResultFiles>
+    </org.jvnet.hudson.plugins.seleniumhtmlreport.SeleniumHtmlReportPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
