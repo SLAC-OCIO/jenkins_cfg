@@ -3,3 +3,91 @@ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x
 Building on master in workspace /var/lib/jenkins/workspace/revision_configs
 [revision_configs] $ /usr/bin/bash -xe /tmp/hudson5175758087930964865.sh
 + cp -R /var/lib/jenkins/automationtest /var/lib/jenkins/be.certipost.hudson.plugin.SCPRepositoryPublisher.xml /var/lib/jenkins/config.xml '/var/lib/jenkins/Connection Activity monitoring to slaves.log' /var/lib/jenkins/credentials.xml '/var/lib/jenkins/Download metadata.log' /var/lib/jenkins/envinject-plugin-configuration.xml /var/lib/jenkins/envInject.xml '/var/lib/jenkins/Fingerprint cleanup.log' /var/lib/jenkins/github-plugin-configuration.xml /var/lib/jenkins/hudson.maven.MavenModuleSet.xml /var/lib/jenkins/hudson.model.UpdateCenter.xml /var/lib/jenkins/hudson.plugins.git.GitSCM.xml /var/lib/jenkins/hudson.plugins.git.GitTool.xml /var/lib/jenkins/hudson.scm.CVSSCM.xml /var/lib/jenkins/hudson.scm.SubversionSCM.xml /var/lib/jenkins/hudson.tasks.Ant.xml /var/lib/jenkins/hudson.tasks.Mailer.xml /var/lib/jenkins/hudson.tasks.Maven.xml /var/lib/jenkins/hudson.tasks.Shell.xml /var/lib/jenkins/hudson.triggers.SCMTrigger.xml /var/lib/jenkins/identity.key.enc /var/lib/jenkins/jenkins.model.ArtifactManagerConfiguration.xml /var/lib/jenkins/jenkins.model.DownloadSettings.xml /var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml /var/lib/jenkins/jenkins.mvn.GlobalMavenConfig.xml /var/lib/jenkins/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml /var/lib/jenkins/jenkins.plugins.shiningpanda.tools.PythonInstallation.xml /var/lib/jenkins/jenkins.plugins.ssh2easy.gssh.GsshBuilderWrapper.xml /var/lib/jenkins/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/lib/jenkins/jobs /var/lib/jenkins/logs /var/lib/jenkins/nodeMonitors.xml /var/lib/jenkins/nodes /var/lib/jenkins/org.jenkinsci.main.modules.sshd.SSHD.xml /var/lib/jenkins/org.jenkinsci.plugins.drupal.config.DrushInstallation.xml /var/lib/jenkins/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml /var/lib/jenkins/org.jenkinsci.plugins.gitclient.JGitTool.xml /var/lib/jenkins/org.jenkinsci.plugins.github.GitHubPlugin.cache /var/lib/jenkins/org.jvnet.hudson.plugins.SSHBuildWrapper.xml /var/lib/jenkins/plugins /var/lib/jenkins/queue.xml.bak /var/lib/jenkins/secret.key /var/lib/jenkins/secret.key.not-so-secret /var/lib/jenkins/secrets /var/lib/jenkins/selenium.log /var/lib/jenkins/selenium-server-standalone.jar /var/lib/jenkins/updates /var/lib/jenkins/userContent /var/lib/jenkins/users /var/lib/jenkins/workspace '/var/lib/jenkins/Workspace clean-up.log' /var/lib/jenkins/workspace/revision_configs/cfg-back
++ :
+[revision_configs] $ /bin/bash /tmp/hudson3909835591633779821.sh
+tar: Removing leading `/' from member names
+[master 58ea810] revision_configs Build#24
+ 89 files changed, 1815 insertions(+), 15 deletions(-)
+ rewrite credentials.xml.gpg (100%)
+ create mode 100644 jobs/igpStageTest/builds/22/build.xml
+ create mode 100644 jobs/igpStageTest/builds/22/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/22/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/22/log
+ create mode 100644 jobs/igpStageTest/builds/23/build.xml
+ create mode 100644 jobs/igpStageTest/builds/23/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/23/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/23/log
+ create mode 100644 jobs/igpStageTest/builds/24/build.xml
+ create mode 100644 jobs/igpStageTest/builds/24/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/24/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/24/log
+ create mode 100644 jobs/igpStageTest/builds/25/build.xml
+ create mode 100644 jobs/igpStageTest/builds/25/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/25/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/25/log
+ create mode 100644 jobs/igpStageTest/builds/26/build.xml
+ create mode 100644 jobs/igpStageTest/builds/26/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/26/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/26/log
+ create mode 100644 jobs/igpStageTest/builds/27/build.xml
+ create mode 100644 jobs/igpStageTest/builds/27/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/27/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/27/log
+ create mode 100644 jobs/igpStageTest/builds/28/build.xml
+ create mode 100644 jobs/igpStageTest/builds/28/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/28/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/28/log
+ create mode 100644 jobs/igpStageTest/builds/29/build.xml
+ create mode 100644 jobs/igpStageTest/builds/29/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/29/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/29/log
+ create mode 100644 jobs/igpStageTest/builds/30/build.xml
+ create mode 100644 jobs/igpStageTest/builds/30/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/30/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/30/log
+ create mode 100644 jobs/igpStageTest/builds/31/build.xml
+ create mode 100644 jobs/igpStageTest/builds/31/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/31/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/31/log
+ create mode 100644 jobs/igpStageTest/builds/32/build.xml
+ create mode 100644 jobs/igpStageTest/builds/32/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/32/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/32/log
+ create mode 100644 jobs/igpStageTest/builds/33/build.xml
+ create mode 100644 jobs/igpStageTest/builds/33/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/33/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/33/log
+ create mode 100644 jobs/igpStageTest/builds/34/build.xml
+ create mode 100644 jobs/igpStageTest/builds/34/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/34/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/34/log
+ create mode 100644 jobs/igpStageTest/builds/35/build.xml
+ create mode 100644 jobs/igpStageTest/builds/35/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/35/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/35/log
+ create mode 100644 jobs/igpStageTest/builds/36/build.xml
+ create mode 100644 jobs/igpStageTest/builds/36/changelog.xml
+ create mode 100644 jobs/igpStageTest/builds/36/injectedEnvVars.txt
+ create mode 100644 jobs/igpStageTest/builds/36/log
+ create mode 120000 jobs/igpStageTest/builds/lastFailedBuild
+ create mode 120000 jobs/igpStageTest/builds/lastStableBuild
+ create mode 120000 jobs/igpStageTest/builds/lastSuccessfulBuild
+ create mode 120000 jobs/igpStageTest/builds/lastUnstableBuild
+ create mode 120000 jobs/igpStageTest/builds/lastUnsuccessfulBuild
+ create mode 100644 jobs/igpStageTest/builds/legacyIds
+ create mode 100644 jobs/igpStageTest/config.xml
+ create mode 120000 jobs/igpStageTest/lastStable
+ create mode 120000 jobs/igpStageTest/lastSuccessful
+ create mode 100644 jobs/igpStageTest/nextBuildNumber
+ create mode 100644 jobs/revision_configs/builds/23/build.xml
+ create mode 100644 jobs/revision_configs/builds/23/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/24/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/24/log
+ rewrite secrets.tar.gz (99%)
+ rewrite secrets.tar.gz.gpg (100%)
+ create mode 100644 selenium-server-standalone.jar
+ rewrite updates/default.json (77%)
+ create mode 100644 users/adumb/config.xml
+To https://github.com/SLACNationalAcceleratorLaboratory/jenkins_cfg.git
+   1efd79d..58ea810  master -> master
+Finished: SUCCESS

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>true</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>1</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty plugin="build-failure-analyzer@1.13.1">
+      <doNotScan>false</doNotScan>
+    </com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty>
+    <EnvInjectJobProperty plugin="envinject@1.92.1">
+      <info>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+      <on>true</on>
+      <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
+      <keepBuildVariables>true</keepBuildVariables>
+      <overrideBuildParameters>false</overrideBuildParameters>
+      <contributors>
+        <org.jenkinsci.plugins.sharedobjects.SharedObjectJobProperty plugin="shared-objects@0.44">
+          <populateSharedObjects>false</populateSharedObjects>
+        </org.jenkinsci.plugins.sharedobjects.SharedObjectJobProperty>
+        <org.jenkinsci.plugins.sharedobjects.ToolInstallationJobProperty plugin="shared-objects@0.44">
+          <populateToolInstallation>false</populateToolInstallation>
+        </org.jenkinsci.plugins.sharedobjects.ToolInstallationJobProperty>
+      </contributors>
+    </EnvInjectJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.seleniumhq.SeleniumhqBuilder plugin="seleniumhq@0.4">
+      <browser> *firefox</browser>
+      <startURL>https://intranet-stage.slac.stanford.edu</startURL>
+      <suiteFile>/var/lib/jenkins/igptest.html</suiteFile>
+      <resultFile>results/result.html</resultFile>
+      <other></other>
+    </hudson.plugins.seleniumhq.SeleniumhqBuilder>
+  </builders>
+  <publishers>
+    <org.jvnet.hudson.plugins.seleniumhtmlreport.SeleniumHtmlReportPublisher plugin="seleniumhtmlreport@1.0">
+      <SELENIUM__REPORTS__TARGET>seleniumReports</SELENIUM__REPORTS__TARGET>
+      <testResultsDir>results/result.html</testResultsDir>
+      <failureIfExceptionOnParsingResultFiles>true</failureIfExceptionOnParsingResultFiles>
+    </org.jvnet.hudson.plugins.seleniumhtmlreport.SeleniumHtmlReportPublisher>
+  </publishers>
+  <buildWrappers>
+    <org.jenkinsci.plugins.xvfb.XvfbBuildWrapper plugin="xvfb@1.0.16">
+      <installationName>Xvfb Redhat</installationName>
+      <displayName>99</displayName>
+      <screen>1024x768x24</screen>
+      <debug>true</debug>
+      <timeout>3600</timeout>
+      <displayNameOffset>1</displayNameOffset>
+      <additionalOptions></additionalOptions>
+      <shutdownWithBuild>true</shutdownWithBuild>
+      <autoDisplayName>false</autoDisplayName>
+      <parallelBuild>true</parallelBuild>
+    </org.jenkinsci.plugins.xvfb.XvfbBuildWrapper>
+    <EnvInjectBuildWrapper plugin="envinject@1.92.1">
+      <info>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
+</project>

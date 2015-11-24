@@ -1,0 +1,13 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQifa/UvOzMvGKn/BJDAO7ks9jKAAAA[0mJenkinsBot1 (Doer 1) in workspace /home/jenkins/workspace/igpStageTest
+executing script:
+=""
+
+sudo /usr/bin/Xvfb :99 -ac -screen 0 1280x1024x24 >/dev/null 2>&1
+/usr/lib64/firefox/firefox-bin >/dev/null 2>&1
+echo "Executed"
+bash: =: command not found
+Executed
+[SSH] exit-status: 0
+Finished: SUCCESS

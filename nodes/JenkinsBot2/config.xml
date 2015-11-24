@@ -2,18 +2,18 @@
 <slave>
   <name>JenkinsBot2</name>
   <description>Second Do&apos;er</description>
-  <remoteFS>/home/jenkins</remoteFS>
+  <remoteFS>/var/lib/jenkins</remoteFS>
   <numExecutors>4</numExecutors>
   <mode>NORMAL</mode>
   <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
   <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.10">
     <host>134.79.129.239</host>
     <port>22</port>
-    <credentialsId>9a872a2d-db68-4eb2-94f7-47e432cccb36</credentialsId>
+    <credentialsId>f342aed3-6f6b-4b9c-a578-e6d1c8459af7</credentialsId>
     <maxNumRetries>0</maxNumRetries>
     <retryWaitTime>0</retryWaitTime>
   </launcher>
   <label>Do&apos;er 1</label>
   <nodeProperties/>
-  <userId>xalg</userId>
+  <userId>jenkins</userId>
 </slave>

@@ -4,7 +4,11 @@
     <org.jenkinsci.plugins.drupal.config.DrushInstallation>
       <name>Default</name>
       <home>/usr/local/bin/</home>
-      <properties/>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers/>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
     </org.jenkinsci.plugins.drupal.config.DrushInstallation>
   </installations>
 </org.jenkinsci.plugins.drupal.config.DrushInstallation_-DescriptorImpl>

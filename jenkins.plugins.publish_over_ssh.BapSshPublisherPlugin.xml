@@ -6,7 +6,7 @@
       <hostname>134.79.129.239</hostname>
       <username>jenkins</username>
       <secretPassword>oFLUDk5m8g2pvwItR5WLFw==</secretPassword>
-      <remoteRootDir>/home/jenkins</remoteRootDir>
+      <remoteRootDir>/var/lib/jenkins</remoteRootDir>
       <port>22</port>
       <commonConfig class="jenkins.plugins.publish_over_ssh.BapSshCommonConfiguration">
         <secretPassphrase>dDO2gle1kxeeRIl9axVyw9TZwdmz/USBJtXvCfmEUWdgCz8njr2vbEDRgpy5Pj5g</secretPassphrase>
@@ -15,12 +15,12 @@
         <disableAllExec>false</disableAllExec>
       </commonConfig>
       <timeout>300000</timeout>
-      <overrideKey>false</overrideKey>
+      <overrideKey>true</overrideKey>
       <disableExec>false</disableExec>
       <keyInfo>
         <secretPassphrase>oFLUDk5m8g2pvwItR5WLFw==</secretPassphrase>
         <key></key>
-        <keyPath></keyPath>
+        <keyPath>/var/lib/jenkins/.ssh/id_rsa</keyPath>
       </keyInfo>
     </jenkins.plugins.publish__over__ssh.BapSshHostConfiguration>
     <jenkins.plugins.publish__over__ssh.BapSshHostConfiguration>
@@ -28,16 +28,16 @@
       <hostname>134.79.129.238</hostname>
       <username>jenkins</username>
       <secretPassword>oFLUDk5m8g2pvwItR5WLFw==</secretPassword>
-      <remoteRootDir>/home/jenkins</remoteRootDir>
+      <remoteRootDir>/var/lib/jenkins</remoteRootDir>
       <port>22</port>
       <commonConfig class="jenkins.plugins.publish_over_ssh.BapSshCommonConfiguration" reference="../../jenkins.plugins.publish__over__ssh.BapSshHostConfiguration/commonConfig"/>
       <timeout>300000</timeout>
-      <overrideKey>false</overrideKey>
+      <overrideKey>true</overrideKey>
       <disableExec>false</disableExec>
       <keyInfo>
         <secretPassphrase>oFLUDk5m8g2pvwItR5WLFw==</secretPassphrase>
         <key></key>
-        <keyPath></keyPath>
+        <keyPath>/var/lib/jenkins/.ssh/id_rsa</keyPath>
       </keyInfo>
     </jenkins.plugins.publish__over__ssh.BapSshHostConfiguration>
   </hostConfigurations>

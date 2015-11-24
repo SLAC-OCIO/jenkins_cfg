@@ -1,0 +1,28 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQifa/UvOzMvGKn/BJDAO7ks9jKAAAA[0mJenkinsBot1 (Doer 1) in workspace /var/lib/jenkins/workspace/bash-test
+executing script:
+
+env
+XDG_SESSION_ID=23
+SELINUX_ROLE_REQUESTED=
+TERM=vt100
+SHELL=/bin/bash
+SSH_CLIENT=134.79.129.233 35318 22
+SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/1
+USER=jenkins
+MAIL=/var/mail/jenkins
+PATH=/usr/local/bin:/usr/bin
+PWD=/var/lib/jenkins
+LANG=en_US.UTF-8
+SELINUX_LEVEL_REQUESTED=
+SHLVL=1
+HOME=/var/lib/jenkins
+LOGNAME=jenkins
+SSH_CONNECTION=134.79.129.233 35318 134.79.129.239 22
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+XDG_RUNTIME_DIR=/run/user/1001
+_=/usr/bin/env
+[SSH] exit-status: 0
+Finished: SUCCESS

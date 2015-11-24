@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
-  <disabledAdministrativeMonitors/>
+  <disabledAdministrativeMonitors>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
   <version>1.637</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
@@ -58,7 +60,7 @@
           <installers>
             <hudson.tools.CommandInstaller>
               <label>rpm</label>
-              <command>rpm -UvH ~/var/lib/jenkins/userContent/jdk-8u65-linux-x64.rpm</command>
+              <command>rpm -Uvh ~/var/lib/jenkins/userContent/jdk-8u65-linux-x64.rpm</command>
               <toolHome>/usr/bin/rpm</toolHome>
             </hudson.tools.CommandInstaller>
           </installers>
@@ -96,8 +98,8 @@
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
           <int>2</int>
-          <string></string>
-          <string></string>
+          <string>DISPLAY</string>
+          <string>:99</string>
           <string>igptest</string>
           <string>https://intranet-stage.slac.stanford.edu</string>
         </tree-map>
