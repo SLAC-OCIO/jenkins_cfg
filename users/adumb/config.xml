@@ -1,17 +1,66 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
-  <fullName>adumb duNston</fullName>
+  <fullName>Adam Duston</fullName>
   <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
       <apiToken>MCDJqTqrdz3WzNVvJFT+wlftBmyKsAw+RJJXY3qd3O2gUtQOTmbyDam/Ai1HlYsX</apiToken>
     </jenkins.security.ApiTokenProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@1.24">
-      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <specifications/>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <java.util.concurrent.CopyOnWriteArrayList>
+            <com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey plugin="ssh-credentials@1.11">
+              <id>bf12f79f-f6ff-46f2-9ec1-d4577b722741</id>
+              <description>jenkins RSA key</description>
+              <username>jenkins</username>
+              <passphrase>oFLUDk5m8g2pvwItR5WLFw==</passphrase>
+              <privateKeySource class="com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource">
+                <privateKey>-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA46YeSFje/DUEoErAk9P+OR1QLTEMW0Zpm9LaMdRJryFIA+rB
+vfRniD8tAAg3lZin9Nql1CcqzDeK3a/TDkGvdqggtwtlqH9rCpX64PEBDmyLkU4s
+9HmL1Tk17xB615XIz5pO8tUMwzPtfktxoqXp/z79lZXw7iWY7zhozwHdcr6m+er7
+mouDXreBRoVOKtooF6UbUQ9kyn9ha8Gqszry0Kz0trwLqUEvpeOMFKFR4MR2uAwC
+W5bc1Vqx8E1o3zTsS+RK7gQioteO39hOHNpsTVcPglmWzSgmCLiHWJq1dEDR77Se
+JLJxMsHKBDOeXoMB8+iuUkVYL1P8/ppkRkRqYQIDAQABAoIBAQCpdZIbRtSOp6TO
+8XZTVL5so654RYeuNkcNMLMt3poPHNYv3EPmdBXRrT2BRZyi5mU4dr50o8dPB5V+
+mpCgjzLfQB5CQ+Cjwl3bHnQHmD+yDgkC3E/ImOYHjjPgxsK60owORg644vFCKdiD
+aAOqEJmUYL6B6IDVtfUXNkWGuxuuemeh58tIakNyDdqda/rfw9BcqNK/Vd07J34c
+UK0HZ91dttiFLdqg6HxPvaaAFNjYXV4kkflLMmFtRrxAKlXQ7julB7u3W0CucnS+
+UfviAmv1IMWNhW5AyzQ8lJvwSVl0eq624AP4hK6hGZoT/nmvv5HfvwSVdrDZuPwl
+KG2RnXAxAoGBAPz9Ec/zz6cfaHw56XPCLBsm5diOoSX2sUHn/NQVd0L97BSg3AEb
+7Hq779N/r3SfsH0HA0fd5FB/AjzgQBOI60n3X6vfKTguKs1HwBckCM7ppEnDDj4H
+1aoO3YW9FsSRV9J7fb+Oq/npHfJ7SFRfGsLYXrAfWooVKXzs7XZMpUy9AoGBAOZb
+1NMX2KzYRwOFUcsede7Wk6g0IBYBwPy4LqRlqe2OpmqHzqbnLEiwHTeUDQaaf/Nn
+xIb5qpxVYQ94qdiHXgyV79RR4GY4T9vFF+zQaU4MpLtVqszcQbaLbXeJEaFl3cx0
+qBMt18necqPqyvdOYYbEFvtApKz3nKvPw4LWGzh1AoGAebqTTYo1CmcUcWG0MNzn
+OBFZWwAWDhxLYjjr8Gh7wCJJ7AsSkP4MpWm0lgHEPMtxslcjfvsHlqvmOcB1VHD3
+NdnvkNWKEdw1AB1cEkZmbpkBUfSm77X5WyBX+rfnMqH0rfR5pyhRG6jNnhUv0lkI
+mWRe+0O63uIb2l5uTBPJHckCgYBpMfZ2j6U7CWkkinVXtIlWkFbNsUAVzKc8wT9L
+g8Gd4k7Mx0fvoBHw/7vX7ZwlL9jOZsywdsMasUKptgiaAPdJ+A6Vfu5iv8R4MAFE
++8ebBNsVUYG2G79GhVVwCQAsHEC1ZXB7kavBW/wuLsKRPRH8YP+9rT+GXW0GaNJ3
+pR65IQKBgQDQrajMGUhKd4pRz/7LaVaaFl/6qL0XPNFWmQkTMv+VH7KoPSqRuG+S
+8bSJRz7z0DYMpICv2Kl0iyc+Uq/ttu3ko/YgXOvhDUHXbYkmYdS3UKA51sp0R2qU
+fe3mQXjSLE0xvBag1QsmVLV56oAHYRlXjD/gxfUQXfctUpdNgCzgJA==
+-----END RSA PRIVATE KEY-----</privateKey>
+              </privateKeySource>
+            </com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey>
+          </java.util.concurrent.CopyOnWriteArrayList>
+        </entry>
+      </domainCredentialsMap>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.16">
       <emailAddress>aduston@slac.stanford.edu</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1448398555297</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
     <hudson.model.MyViewsProperty>
       <primaryViewName></primaryViewName>
       <views>
@@ -28,7 +77,7 @@
       <collapsed/>
     </hudson.model.PaneStatusProperties>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$ZqdMIFXN0XODUMq4cXJ7Hu9wzRTIYOgjZGJIbW6YDGSHX2/vdxH92</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$eP3COfFS0KrdebUwM9ohLuYtLEK.b3QyjqvHQdSasZQnjKMmR/N/.</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
       <authorizedKeys></authorizedKeys>

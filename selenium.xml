@@ -9,18 +9,13 @@
   <configurations>
     <hudson.plugins.selenium.configuration.global.SeleniumGlobalConfiguration>
       <name>default</name>
-      <matcher class="hudson.plugins.selenium.configuration.global.matcher.MatchAllMatcher"/>
+      <matcher class="hudson.plugins.selenium.configuration.global.matcher.NodeLabelMatcher">
+        <labelExpr>master</labelExpr>
+      </matcher>
       <configuration class="hudson.plugins.selenium.configuration.CustomWDConfiguration">
-        <display>99</display>
-        <port>5555</port>
+        <display></display>
+        <port>4445</port>
         <browsers>
-          <hudson.plugins.selenium.configuration.browser.webdriver.IEBrowser>
-            <maxInstances>1</maxInstances>
-            <version></version>
-            <protocol>WebDriver</protocol>
-            <name>internet explorer</name>
-            <server__binary></server__binary>
-          </hudson.plugins.selenium.configuration.browser.webdriver.IEBrowser>
           <hudson.plugins.selenium.configuration.browser.webdriver.FirefoxBrowser>
             <maxInstances>5</maxInstances>
             <version></version>
@@ -28,13 +23,6 @@
             <name>firefox</name>
             <binary__path></binary__path>
           </hudson.plugins.selenium.configuration.browser.webdriver.FirefoxBrowser>
-          <hudson.plugins.selenium.configuration.browser.webdriver.ChromeBrowser>
-            <maxInstances>5</maxInstances>
-            <version></version>
-            <protocol>WebDriver</protocol>
-            <name>chrome</name>
-            <server__binary></server__binary>
-          </hudson.plugins.selenium.configuration.browser.webdriver.ChromeBrowser>
         </browsers>
       </configuration>
     </hudson.plugins.selenium.configuration.global.SeleniumGlobalConfiguration>

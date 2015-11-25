@@ -41,38 +41,83 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.plugins.seleniumhq.SeleniumhqBuilder plugin="seleniumhq@0.4">
-      <browser> *firefox</browser>
-      <startURL>https://intranet-stage.slac.stanford.edu</startURL>
-      <suiteFile>/var/lib/jenkins/igptest.html</suiteFile>
-      <resultFile>results/result.html</resultFile>
-      <other></other>
-    </hudson.plugins.seleniumhq.SeleniumhqBuilder>
+    <hudson.plugins.python.Python plugin="python@1.3">
+      <command># -*- coding: utf-8 -*-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoAlertPresentException
+from selenium.webdriver.support import expected_conditions as EC
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(1280, 768))
+display.start()
+import unittest, time, re
+
+class Mytest(unittest.TestCase):
+    def setUp(self):
+        self.driver = webdriver.Firefox()
+        self.driver.implicitly_wait(30)
+        self.base_url = &quot;https://intranet-stage.slac.stanford.edu&quot;
+        self.verificationErrors = []
+        self.accept_next_alert = True
+    
+    def test_my(self):
+        driver = self.driver
+        driver.get(&quot;https://intranet-stage.slac.stanford.edu&quot;)
+        driver.find_element_by_name(&quot;username&quot;).clear()
+        driver.find_element_by_name(&quot;username&quot;).send_keys(&quot;xalg&quot;)
+        driver.find_element_by_name(&quot;password&quot;).clear()
+        driver.find_element_by_name(&quot;password&quot;).send_keys(&quot;d0ck3rz3r0b33fj3rk3y!&quot;)
+        driver.find_element_by_css_selector(&quot;input.input-button&quot;).click()
+        driver.find_element_by_id(&quot;edit-slac-search-block-form--2&quot;).clear()
+        driver.find_element_by_id(&quot;edit-slac-search-block-form--2&quot;).send_keys(&quot;High Energy Density Science&quot;)
+        driver.find_element_by_id(&quot;edit-submit&quot;).click()
+        driver.find_element_by_id(&quot;edit-slac-search-block-form--2&quot;).clear()
+        driver.find_element_by_id(&quot;edit-slac-search-block-form--2&quot;).send_keys(&quot;High Energy Density Science&quot;)
+        driver.find_element_by_id(&quot;edit-submit&quot;).click()
+        driver.execute_script(&quot;document.getElementsByClassName(&apos;fieldset-wrapper&apos;)[0].style.display=&apos;block&apos;&quot;)
+        driver.find_element_by_id(&quot;edit-field-shared-tags-name&quot;).clear()
+        driver.find_element_by_id(&quot;edit-field-shared-tags-name&quot;).send_keys(&quot;Lasers&quot;)
+        driver.find_element_by_id(&quot;edit-field-news-news-type-lab-news&quot;).click()
+        driver.find_element_by_css_selector(&quot;label.option&quot;).click()
+        driver.find_element_by_id(&quot;edit-published-from&quot;).send_keys(&quot;02/07/2015&quot;)
+        driver.find_element_by_id(&quot;edit-published-to&quot;).send_keys(&quot;11/25/2015&quot;)
+        driver.find_element_by_id(&quot;edit-second-submit-search&quot;).click()
+
+    
+    def is_element_present(self, how, what):
+        try: self.driver.find_element(by=how, value=what)
+        except NoSuchElementException, e: return False
+        return True
+
+    def is_alert_present(self):
+        try: self.driver.switch_to_alert()
+        except NoAlertPresentException, e: return False
+        return True
+    
+    def close_alert_and_get_its_text(self):
+        try:
+            alert = self.driver.switch_to_alert()
+            alert_text = alert.text
+            if self.accept_next_alert:
+                alert.accept()
+            else:
+                alert.dismiss()
+            return alert_text
+        finally: self.accept_next_alert = True
+    
+    def tearDown(self):
+        self.driver.quit()
+        self.assertEqual([], self.verificationErrors)
+
+if __name__ == &quot;__main__&quot;:
+    unittest.main()
+
+display.stop()</command>
+    </hudson.plugins.python.Python>
   </builders>
-  <publishers>
-    <org.jvnet.hudson.plugins.seleniumhtmlreport.SeleniumHtmlReportPublisher plugin="seleniumhtmlreport@1.0">
-      <SELENIUM__REPORTS__TARGET>seleniumReports</SELENIUM__REPORTS__TARGET>
-      <testResultsDir>results/result.html</testResultsDir>
-      <failureIfExceptionOnParsingResultFiles>true</failureIfExceptionOnParsingResultFiles>
-    </org.jvnet.hudson.plugins.seleniumhtmlreport.SeleniumHtmlReportPublisher>
-  </publishers>
-  <buildWrappers>
-    <org.jenkinsci.plugins.xvfb.XvfbBuildWrapper plugin="xvfb@1.0.16">
-      <installationName>Xvfb Redhat</installationName>
-      <displayName>99</displayName>
-      <screen>1024x768x24</screen>
-      <debug>true</debug>
-      <timeout>3600</timeout>
-      <displayNameOffset>1</displayNameOffset>
-      <additionalOptions></additionalOptions>
-      <shutdownWithBuild>true</shutdownWithBuild>
-      <autoDisplayName>false</autoDisplayName>
-      <parallelBuild>true</parallelBuild>
-    </org.jenkinsci.plugins.xvfb.XvfbBuildWrapper>
-    <EnvInjectBuildWrapper plugin="envinject@1.92.1">
-      <info>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <publishers/>
+  <buildWrappers/>
 </project>

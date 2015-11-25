@@ -1,0 +1,14 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting contributions.
+Building on master in workspace /var/lib/jenkins/workspace/jenkinstest
+[jenkinstest] $ python /tmp/hudson8778172188680636999.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 22.375s
+
+OK
+Finished: SUCCESS

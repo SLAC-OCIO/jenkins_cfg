@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.plugins.git.GitSCM_-DescriptorImpl plugin="git@2.4.0">
-  <generation>1</generation>
+  <generation>9</generation>
   <globalConfigName>slacsoftware</globalConfigName>
   <globalConfigEmail>xalg@slac.stanford.edu</globalConfigEmail>
   <createAccountBasedOnEmail>false</createAccountBasedOnEmail>

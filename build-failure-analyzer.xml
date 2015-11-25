@@ -7,7 +7,7 @@
     <causes/>
   </knowledgeBase>
   <nrOfScanThreads>3</nrOfScanThreads>
-  <graphsEnabled>true</graphsEnabled>
+  <graphsEnabled>false</graphsEnabled>
   <testResultParsingEnabled>false</testResultParsingEnabled>
   <testResultCategories></testResultCategories>
   <sodVariables>

@@ -1,0 +1,69 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYu/dLi1CL9isScdAC42M36vwAAAA==[0mVincent Flesouras
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/python-install-stuff
+SSH: Connecting from host [jenkins.xalg-home.farm04-dmz.nebula.slac.stanford.edu]
+SSH: Connecting with configuration [jenkinsbot1] ...
+SSH: Creating session: username [jenkins], hostname [134.79.129.239], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [sudo yum -y install python-pip && sudo pip install -U selenium] ...
+SSH: EXEC: connected
+Loaded plugins: fastestmirror
+base                                                     | 3.6 kB     00:00     
+epel/x86_64/metalink                                     |  14 kB     00:00     
+epel                                                     | 4.3 kB     00:00     
+extras                                                   | 3.4 kB     00:00     
+google-chrome                                            |  951 B     00:00     
+updates                                                  | 3.4 kB     00:00     
+(1/2): epel/x86_64/updatei 0% [                 ]  0.0 B/s |    0 B   --:-- ETA (1/2): epel/x86_64/updatei 2% [                 ]  0.0 B/s | 118 kB   --:-- ETA (1/2): epel/x86_64/updatei 7% [=                ] 284 kB/s | 314 kB   00:13 ETA (1/2): epel/x86_64/updateinfo                              | 389 kB   00:01     
+(2/2): epel/x86_64/primary 15% [==-             ] 310 kB/s | 651 kB   00:11 ETA (2/2): epel/x86_64/primary 27% [====            ] 383 kB/s | 1.1 MB   00:07 ETA (2/2): epel/x86_64/primary 49% [=======-        ] 538 kB/s | 2.0 MB   00:03 ETA (2/2): epel/x86_64/primary 81% [=============   ] 764 kB/s | 3.3 MB   00:01 ETA (2/2): epel/x86_64/primary_db                              | 3.6 MB   00:01     
+Loading mirror speeds from cached hostfile
+ * base: linux.mirrors.es.net
+ * epel: linux.mirrors.es.net
+ * extras: mirror.hostduplex.com
+ * updates: mirrors.kernel.org
+Package python-pip-7.1.0-1.el7.noarch already installed and latest version
+Nothing to do
+[33mYou are using pip version 7.1.0, however version 7.1.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+/usr/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+Requirement already up-to-date: selenium in /usr/lib/python2.7/site-packages
+SSH: EXEC: completed after 13,410 ms
+SSH: Disconnecting configuration [jenkinsbot1] ...
+SSH: Transferred 0 file(s)
+SSH: Connecting from host [jenkins.xalg-home.farm04-dmz.nebula.slac.stanford.edu]
+SSH: Connecting with configuration [jenkinsbot2] ...
+SSH: Creating session: username [jenkins], hostname [134.79.129.238], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [sudo yum -y install python-pip && sudo pip install -U selenium] ...
+SSH: EXEC: connected
+Loaded plugins: fastestmirror
+base                                                     | 3.6 kB     00:00     
+epel/x86_64/metalink                                     |  14 kB     00:00     
+epel                                                     | 4.3 kB     00:00     
+extras                                                   | 3.4 kB     00:00     
+google-chrome                                            |  951 B     00:00     
+jenkins                                                  |  951 B     00:00     
+updates                                                  | 3.4 kB     00:00     
+Loading mirror speeds from cached hostfile
+ * base: linux.mirrors.es.net
+ * epel: mirror.sfo12.us.leaseweb.net
+ * extras: mirror.keystealth.org
+ * updates: mirrors.kernel.org
+Package python-pip-7.1.0-1.el7.noarch already installed and latest version
+Nothing to do
+[33mYou are using pip version 7.1.0, however version 7.1.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+/usr/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+Requirement already up-to-date: selenium in /usr/lib/python2.7/site-packages
+SSH: EXEC: completed after 6,805 ms
+SSH: Disconnecting configuration [jenkinsbot2] ...
+SSH: Transferred 0 file(s)
+Finished: SUCCESS

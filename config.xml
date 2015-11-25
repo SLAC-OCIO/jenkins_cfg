@@ -8,39 +8,71 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:adumb</permission>
     <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:adumb</permission>
     <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:adumb</permission>
     <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:adumb</permission>
     <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:xalg</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:adumb</permission>
     <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:xalg</permission>
+    <permission>com.sonyericsson.jenkins.plugins.bfa.PluginImpl.RemoveCause:adumb</permission>
+    <permission>com.sonyericsson.jenkins.plugins.bfa.PluginImpl.UpdateCauses:adumb</permission>
+    <permission>com.sonyericsson.jenkins.plugins.bfa.PluginImpl.ViewCauses:adumb</permission>
+    <permission>hudson.model.Computer.Build:adumb</permission>
     <permission>hudson.model.Computer.Build:xalg</permission>
+    <permission>hudson.model.Computer.Configure:adumb</permission>
     <permission>hudson.model.Computer.Configure:xalg</permission>
+    <permission>hudson.model.Computer.Connect:adumb</permission>
     <permission>hudson.model.Computer.Connect:xalg</permission>
+    <permission>hudson.model.Computer.Create:adumb</permission>
     <permission>hudson.model.Computer.Create:xalg</permission>
+    <permission>hudson.model.Computer.Delete:adumb</permission>
     <permission>hudson.model.Computer.Delete:xalg</permission>
+    <permission>hudson.model.Computer.Disconnect:adumb</permission>
     <permission>hudson.model.Computer.Disconnect:xalg</permission>
+    <permission>hudson.model.Hudson.Administer:adumb</permission>
     <permission>hudson.model.Hudson.Administer:xalg</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:adumb</permission>
     <permission>hudson.model.Hudson.ConfigureUpdateCenter:xalg</permission>
+    <permission>hudson.model.Hudson.Read:adumb</permission>
     <permission>hudson.model.Hudson.Read:xalg</permission>
+    <permission>hudson.model.Hudson.RunScripts:adumb</permission>
     <permission>hudson.model.Hudson.RunScripts:xalg</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:adumb</permission>
     <permission>hudson.model.Hudson.UploadPlugins:xalg</permission>
+    <permission>hudson.model.Item.Build:adumb</permission>
     <permission>hudson.model.Item.Build:xalg</permission>
+    <permission>hudson.model.Item.Cancel:adumb</permission>
     <permission>hudson.model.Item.Cancel:xalg</permission>
+    <permission>hudson.model.Item.Configure:adumb</permission>
     <permission>hudson.model.Item.Configure:xalg</permission>
+    <permission>hudson.model.Item.Create:adumb</permission>
     <permission>hudson.model.Item.Create:xalg</permission>
+    <permission>hudson.model.Item.Delete:adumb</permission>
     <permission>hudson.model.Item.Delete:xalg</permission>
+    <permission>hudson.model.Item.Discover:adumb</permission>
     <permission>hudson.model.Item.Discover:xalg</permission>
+    <permission>hudson.model.Item.Read:adumb</permission>
     <permission>hudson.model.Item.Read:xalg</permission>
+    <permission>hudson.model.Item.Workspace:adumb</permission>
     <permission>hudson.model.Item.Workspace:xalg</permission>
+    <permission>hudson.model.Run.Delete:adumb</permission>
     <permission>hudson.model.Run.Delete:xalg</permission>
+    <permission>hudson.model.Run.Update:adumb</permission>
     <permission>hudson.model.Run.Update:xalg</permission>
+    <permission>hudson.model.View.Configure:adumb</permission>
     <permission>hudson.model.View.Configure:xalg</permission>
+    <permission>hudson.model.View.Create:adumb</permission>
     <permission>hudson.model.View.Create:xalg</permission>
+    <permission>hudson.model.View.Delete:adumb</permission>
     <permission>hudson.model.View.Delete:xalg</permission>
+    <permission>hudson.model.View.Read:adumb</permission>
     <permission>hudson.model.View.Read:xalg</permission>
-    <permission>hudson.plugins.selenium.PluginImpl.Admin:xalg</permission>
+    <permission>hudson.scm.SCM.Tag:adumb</permission>
     <permission>hudson.scm.SCM.Tag:xalg</permission>
-    <permission>org.jenkinsci.plugins.envinject.EnvInjectPlugin.ViewVars:xalg</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
@@ -99,7 +131,7 @@
           </default>
           <int>2</int>
           <string>DISPLAY</string>
-          <string>:99</string>
+          <string>99</string>
           <string>igptest</string>
           <string>https://intranet-stage.slac.stanford.edu</string>
         </tree-map>
