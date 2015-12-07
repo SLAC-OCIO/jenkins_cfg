@@ -3,3 +3,47 @@ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x
 Building on master in workspace /var/lib/jenkins/workspace/revision_configs
 [revision_configs] $ /bin/bash -xe /tmp/hudson5050055219631070046.sh
 + cp -R /var/lib/jenkins/automationtest /var/lib/jenkins/be.certipost.hudson.plugin.SCPRepositoryPublisher.xml /var/lib/jenkins/build-failure-analyzer.xml /var/lib/jenkins/config.xml '/var/lib/jenkins/Connection Activity monitoring to slaves.log' /var/lib/jenkins/createjobadvanced.xml /var/lib/jenkins/credentials.xml /var/lib/jenkins/Desktop '/var/lib/jenkins/Download metadata.log' /var/lib/jenkins/envinject-plugin-configuration.xml /var/lib/jenkins/envInject.xml '/var/lib/jenkins/Fingerprint cleanup.log' /var/lib/jenkins/github-plugin-configuration.xml /var/lib/jenkins/hudson.maven.MavenModuleSet.xml /var/lib/jenkins/hudson.model.UpdateCenter.xml /var/lib/jenkins/hudson.plugins.git.GitSCM.xml /var/lib/jenkins/hudson.plugins.git.GitTool.xml /var/lib/jenkins/hudson.plugins.logparser.LogParserPublisher.xml /var/lib/jenkins/hudson.plugins.seleniumhq.SeleniumhqBuilder.xml /var/lib/jenkins/hudson.plugins.xvnc.Xvnc.xml /var/lib/jenkins/hudson.scm.CVSSCM.xml /var/lib/jenkins/hudson.scm.SubversionSCM.xml /var/lib/jenkins/hudson.tasks.Ant.xml /var/lib/jenkins/hudson.tasks.Mailer.xml /var/lib/jenkins/hudson.tasks.Maven.xml /var/lib/jenkins/hudson.tasks.Shell.xml /var/lib/jenkins/hudson.triggers.SCMTrigger.xml /var/lib/jenkins/identity.key.enc /var/lib/jenkins/igptest.html /var/lib/jenkins/jdk-8u65-linux-x64.rpm /var/lib/jenkins/jenkins.log /var/lib/jenkins/jenkins.model.ArtifactManagerConfiguration.xml /var/lib/jenkins/jenkins.model.DownloadSettings.xml /var/lib/jenkins/jenkins.model.JenkinsLocationConfiguration.xml /var/lib/jenkins/jenkins.mvn.GlobalMavenConfig.xml /var/lib/jenkins/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml /var/lib/jenkins/jenkins.plugins.shiningpanda.tools.PythonInstallation.xml /var/lib/jenkins/jenkins.plugins.ssh2easy.gssh.GsshBuilderWrapper.xml /var/lib/jenkins/jenkins.security.QueueItemAuthenticatorConfiguration.xml /var/lib/jenkins/jenkins.war /var/lib/jenkins/jobs /var/lib/jenkins/logs /var/lib/jenkins/nodeMonitors.xml /var/lib/jenkins/nodes /var/lib/jenkins/org.jenkinsci.main.modules.sshd.SSHD.xml /var/lib/jenkins/org.jenkinsci.plugins.ansible.AnsibleInstallation.xml /var/lib/jenkins/org.jenkinsci.plugins.drupal.config.DrushInstallation.xml /var/lib/jenkins/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml /var/lib/jenkins/org.jenkinsci.plugins.gitclient.JGitTool.xml /var/lib/jenkins/org.jenkinsci.plugins.github.GitHubPlugin.cache /var/lib/jenkins/org.jenkinsci.plugins.vncviewer.VncViewerBuildWrapper.xml /var/lib/jenkins/org.jenkinsci.plugins.xvfb.XvfbBuildWrapper.xml /var/lib/jenkins/org.jvnet.hudson.plugins.SSHBuildWrapper.xml /var/lib/jenkins/plugins /var/lib/jenkins/python_org_search.py /var/lib/jenkins/queue.xml.bak /var/lib/jenkins/secret.key /var/lib/jenkins/secret.key.not-so-secret /var/lib/jenkins/secrets /var/lib/jenkins/selenium.log /var/lib/jenkins/selenium-server-standalone-2.41.0.jar /var/lib/jenkins/selenium-server-standalone.jar /var/lib/jenkins/selenium.xml /var/lib/jenkins/test.py /var/lib/jenkins/tests /var/lib/jenkins/updates /var/lib/jenkins/userContent /var/lib/jenkins/users /var/lib/jenkins/workspace '/var/lib/jenkins/Workspace clean-up.log' /var/lib/jenkins/xvfb-18-5911941200227922365.fbdir /var/lib/jenkins/xvfb-19-7510064688384449273.fbdir /var/lib/jenkins/xvfb-20-4065147430020437372.fbdir /var/lib/jenkins/xvfb-21-7395757994542750862.fbdir /var/lib/jenkins/workspace/revision_configs/cfg-back
++ :
+[revision_configs] $ /bin/bash /tmp/hudson3784513745875230594.sh
+tar: Removing leading `/' from member names
+[master 2714270] revision_configs Build#26
+ 53 files changed, 2702 insertions(+), 69 deletions(-)
+ rewrite credentials.xml.gpg (100%)
+ create mode 120000 jobs/drushtest/builds/lastFailedBuild
+ create mode 120000 jobs/drushtest/builds/lastStableBuild
+ create mode 120000 jobs/drushtest/builds/lastSuccessfulBuild
+ create mode 120000 jobs/drushtest/builds/lastUnstableBuild
+ create mode 120000 jobs/drushtest/builds/lastUnsuccessfulBuild
+ create mode 100644 jobs/drushtest/builds/legacyIds
+ create mode 100644 jobs/drushtest/config.xml
+ create mode 100644 jobs/drushtest/nextBuildNumber
+ create mode 100644 jobs/jenkinstest/builds/54/build.xml
+ create mode 100644 jobs/jenkinstest/builds/54/changelog.xml
+ create mode 100644 jobs/jenkinstest/builds/54/injectedEnvVars.txt
+ create mode 100644 jobs/jenkinstest/builds/54/log
+ create mode 100644 jobs/python-install-stuff/builds/3/build.xml
+ create mode 100644 jobs/python-install-stuff/builds/3/changelog.xml
+ create mode 100644 jobs/python-install-stuff/builds/3/injectedEnvVars.txt
+ create mode 100644 jobs/python-install-stuff/builds/3/log
+ create mode 120000 jobs/python-install-stuff/builds/lastFailedBuild
+ create mode 120000 jobs/python-install-stuff/builds/lastStableBuild
+ create mode 120000 jobs/python-install-stuff/builds/lastSuccessfulBuild
+ create mode 120000 jobs/python-install-stuff/builds/lastUnstableBuild
+ create mode 120000 jobs/python-install-stuff/builds/lastUnsuccessfulBuild
+ create mode 100644 jobs/python-install-stuff/builds/legacyIds
+ create mode 100644 jobs/python-install-stuff/config.xml
+ create mode 120000 jobs/python-install-stuff/lastStable
+ create mode 120000 jobs/python-install-stuff/lastSuccessful
+ create mode 100644 jobs/python-install-stuff/nextBuildNumber
+ create mode 100644 jobs/revision_configs/builds/25/build.xml
+ create mode 100644 jobs/revision_configs/builds/25/injectedEnvVars.txt
+ create mode 100644 jobs/revision_configs/builds/26/changelog.xml
+ create mode 100644 jobs/revision_configs/builds/26/log
+ create mode 100644 python_org_search.py
+ rewrite secrets.tar.gz (100%)
+ rewrite secrets.tar.gz.gpg (100%)
+ create mode 100644 test.py
+ create mode 100644 tests/igptest.html
+To https://github.com/SLACNationalAcceleratorLaboratory/jenkins_cfg.git
+   5b74454..2714270  master -> master
+Finished: SUCCESS

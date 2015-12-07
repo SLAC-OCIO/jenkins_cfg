@@ -12,7 +12,7 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty plugin="build-failure-analyzer@1.13.1">
+    <com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty plugin="build-failure-analyzer@1.13.2">
       <doNotScan>false</doNotScan>
     </com.sonyericsson.jenkins.plugins.bfa.model.ScannerJobProperty>
     <EnvInjectJobProperty plugin="envinject@1.92.1">
@@ -59,13 +59,13 @@ class Mytest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = &quot;https://intranet-stage.slac.stanford.edu&quot;
+        self.base_url = &quot;https://intranet.slac.stanford.edu&quot;
         self.verificationErrors = []
         self.accept_next_alert = True
     
     def test_my(self):
         driver = self.driver
-        driver.get(&quot;https://intranet-stage.slac.stanford.edu&quot;)
+        driver.get(&quot;https://intranet.slac.stanford.edu&quot;)
         driver.find_element_by_name(&quot;username&quot;).clear()
         driver.find_element_by_name(&quot;username&quot;).send_keys(&quot;xalg&quot;)
         driver.find_element_by_name(&quot;password&quot;).clear()
